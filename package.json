@@ -1,0 +1,25 @@
+{
+  "name": "NCViewerLauncher",
+  "displayName": "NC Viewer Launcher",
+  "description": "Open NCViewer in VS Code",
+  "version": "0.0.1",
+  "publisher": "DrPhilDSI",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ncviewer.openWebView",
+        "title": "Open NCViewer"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onCommand:ncviewer.openWebView"
+  ]
+}
